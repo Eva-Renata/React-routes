@@ -8,6 +8,7 @@ import { About } from './Components/Pages/About/About'
 import { Gallery } from './Components/Gallery/Gallery';
 import { Greetings } from './Components/Pages/Greetings/Greetings';
 import { Counter } from './Components/Pages/Counting_click/Counting';
+import { Formular } from './Components/Pages/Kontakt formular/KontaktFormular'
 
 const arrImages = [
     
@@ -35,12 +36,12 @@ function App() {
       <Router>
         <Header />
         <Main>
-          <Greetings />
-          <Counter />
           <Routes>
             <Route path="/" index element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/gallery" element={<Gallery imageList={arrImages} />} />
+            <Route path="/greetings" element={<Greetings />}/>
+            <Route path="/counter" element={<Counter />}/>
+            <Route path="/formular" element={<Formular />}/>
           </Routes>
         </Main>
         <Footer />
