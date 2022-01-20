@@ -1,0 +1,19 @@
+h2 {
+  margin-top: 5vh;
+}
+fieldset {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  // > * {
+  //   border: solid 1px grey;
+  // }
+  form {
+    width: 500px;
+    input {
+      width: 100%;
+    }
+    button {
+      margin: 2vh;
+    }
+  }
+}
